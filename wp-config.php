@@ -13,7 +13,7 @@
  *
  * @package WordPress
  */
-require '/etc/wordpress/config-default.php'
+require '/etc/wordpress/config-default.php';
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */

@@ -85,11 +85,16 @@ define('WP_DEBUG', false);
 
 /** Absolute path to the WordPress directory. */
 if ( !defined('ABSPATH') )
-	define('ABSPATH', dirname(__FILE__) . '/');
-
+//	define('ABSPATH', dirname(__FILE__) . '/');
+define('ABSPATH', '/var/www/onefaceinamillion/');
 define('WP_HOME',"http://{$_SERVER['HTTP_HOST']}");
 define('WP_SITEURL',"http://{$_SERVER['HTTP_HOST']}");
 define('WP_CACHE', true);
+define('WP_CONTENT_DIR', ABSPATH . 'wp-content');
+define('WP_CONTENT_URL', WP_HOME . '/wp-content');
+define('WP_PLUGIN_DIR',  ABSPATH . 'plugins');
+define('WP_PLUGIN_URL',  WP_HOME . '/plugins');
+
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
